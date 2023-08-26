@@ -1,21 +1,27 @@
 #include<stdio.h>
 #include<locale.h>
-#include<math.h>
 
 int main()
 {
+	//o locale troca o "." pelo "," na casa decimal
 	setlocale(LC_ALL,"Portuguese");
 	
-	float valor,dolar,cotacao;
+	double custo,frete,despesa,valor,lucro;
 	
-	printf("Valor em reais: ");
-	scanf("%f",&valor);
+	printf("Valor de custo em reais: ");
+	scanf("%lf",&custo);
 	
-	printf("\nValor da cotação do dólar em reais: ");
-	scanf("%f",&dolar);
+	printf("Valor de frete em reais: ");
+	scanf("%lf",&frete);
 	
-	cotacao=valor*dolar;
+	printf("Valor de despesas eventuais em reais: ");
+	scanf("%lf",&despesa);
 	
-	printf("\nCotação de %.2f reais para dólar é de %.2f dolares",valor,cotacao);
+	printf("Valor de venda em reais: ");
+	scanf("%lf",&valor);
+	
+	lucro=valor-frete-despesa-custo;
+	
+	printf("A mercadoria teve lucro de R$%.2lf",lucro);
 	return 0;
 }
