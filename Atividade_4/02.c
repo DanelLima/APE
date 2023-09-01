@@ -28,7 +28,7 @@ int main(){
         printf("O maior número digitado foi %d",D);
     }
 
-     if (A<=B && A<=C && A<=D){
+    if (A<=B && A<=C && A<=D){
         printf("\nO menor número digitado foi %d",A);
     } else if (B<=A && B<=C && B<=D){
         printf("\nO menor número digitado foi %d",B);
