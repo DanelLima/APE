@@ -131,7 +131,7 @@ int main(){
             printf("\nO segundo maior número digitado foi %d",A);
             if (C>=B){
                 printf("\nO terceiro maior número digitado foi %d",C);
-                printf("O quarto maior número digitado foi %d",B);
+                printf("\nO quarto maior número digitado foi %d",B);
             }else{
                 printf("\nO terceiro maior número digitado foi %d",B);
                 printf("\nO quarto maior número digitado foi %d",C);
