@@ -19,7 +19,7 @@ int main(){
         printf("\nO número não é igual a 5 ou 500 ou 400");
     }
     
-    if (numb>=500 && numb<=1000){
+    if (numb>500 && numb<1000){
         printf("\nO número está entre 500 e 1000");
     } else{
         printf("\nO número não está entre 500 e 1000");
