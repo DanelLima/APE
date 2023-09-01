@@ -3,6 +3,8 @@
 #include<math.h>
 
 int main(){
+    setlocale(LC_ALL,"portuguese");
+    
     int A,B,C,D;
     
     printf("Diga um número inteiro: ");
@@ -111,11 +113,11 @@ int main(){
         printf("O menor número digitado foi %d",D);
         if (B<=C && B<=A){
             printf("\nO segundo menor número digitado foi %d",B);
-            if (A<=D){
+            if (A<=C){
                 printf("\nO terceiro menor número digitado foi %d",A);
-                printf("\nO quarto menor número digitado foi %d",D);
+                printf("\nO quarto menor número digitado foi %d",C);
             }else{
-                printf("\nO terceiro menor número digitado foi %d",D);
+                printf("\nO terceiro menor número digitado foi %d",C);
                 printf("\nO quarto menor número digitado foi %d",A);
             }
         } else if (C<=B && C<=A){

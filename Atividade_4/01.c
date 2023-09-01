@@ -3,9 +3,11 @@
 #include<math.h>
 
 int main(){
+    setlocale(LC_ALL,"portuguese");
+
     float numb,result;
 
-    printf("Diga um número inteiro: ");
+    printf("Diga um número: ");
     scanf("%f",&numb);
 
     if (numb>=0){

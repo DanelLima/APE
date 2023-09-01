@@ -3,6 +3,8 @@
 #include<math.h>
 
 int main(){
+    setlocale(LC_ALL,"portuguese");
+    
     int A,B,C,D;
     
     printf("Diga um número inteiro: ");
