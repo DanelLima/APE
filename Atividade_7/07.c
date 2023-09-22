@@ -3,7 +3,7 @@
 int main(){
 
     char sexo,olho,cabelo;
-    int idade, totalF = 0, parteF = 0;
+    int idade, total = 0, parteF = 0;
     float salario,por100;
 
     while (1)
@@ -30,11 +30,7 @@ int main(){
                     scanf("%d",&idade);
                     setbuf(stdin,NULL);
 
-                    if (idade==-1){
-
-                        break;
-
-                    }
+                    if (idade==-1){break;}
 
                     if (idade > 10 && idade < 100){
                         
@@ -45,8 +41,8 @@ int main(){
                         if (salario>0){
 
                             if (sexo == 'f' && (idade > 18 && idade < 35) && olho == 'c' && cabelo == 'c')
-                            {parteF++;totalF++;} else if (sexo == 'f')
-                            {totalF++;}
+                            {parteF++;total++;} else
+                            {total++;}
 
                         }else{printf("\nInformação não aceita");}
 
@@ -60,12 +56,10 @@ int main(){
 
     }
 
-    por100 = ((float)parteF / totalF);
+    por100 = ((float)parteF / total);
     por100 = por100 * 100;
 
     printf("\nA porcentagem de indivíduos do sexo feminino, com idade entre 18 e 35 anos e que tenham olhos castanhos e cabelos castanhos eh: %.1f%%",por100);
-
-    
 
     return 0; 
 
