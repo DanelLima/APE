@@ -41,8 +41,7 @@ int main(){
                         if (salario>0){
 
                             if (sexo == 'f' && (idade > 18 && idade < 35) && olho == 'c' && cabelo == 'c')
-                            {parteF++;total++;} else
-                            {total++;}
+                            {parteF++;total++;} else {total++;}
 
                         }else{printf("\nInformação não aceita");}
 
