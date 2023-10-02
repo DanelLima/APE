@@ -29,7 +29,7 @@ int main()
         printf("Numero de acidentes de transito com vitimas em 1992: ");
         scanf("%d", &num_acidentes);
 
-        indice = (float)num_acidentes / num_veiculos; // Certifique-se de fazer a divisão como float
+        indice = (float)num_acidentes / num_veiculos;
 
         if (indice > maior_indice)
         {
