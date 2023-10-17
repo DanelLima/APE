@@ -40,10 +40,15 @@ int main()
 
     if (seExiste)
     {
-        for (int i = 0; i <= count; i++)
+        printf("Existem numeros iguais, sendo: \n\n");
+        for (int i = 0; i < count; i++)
         {
             printf("%d ", vetor[i]);
         }
+    }
+    else
+    {
+        printf("Nao foram digitados numeros iguais");
     }
 
     return 0;
